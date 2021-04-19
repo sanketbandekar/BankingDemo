@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d8e3e7"
+    tools:context=".Activity.TransactionHistoryActivity">
+
+    <TextView
+        android:id="@+id/tra_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Transaction History"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:layout_marginBottom="10dp"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/txt_tra_recyclerView"
+        android:layout_below="@id/tra_text"
+        android:layout_width="match_parent"
+        android:background="#ead3cb"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:padding="5dp"/>
+
+</RelativeLayout>

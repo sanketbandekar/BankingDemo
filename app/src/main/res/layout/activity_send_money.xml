@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/others_bg"
+    tools:context=".Activity.SendMoneyActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PROFILE"
+        android:textSize="50sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/sm_cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:paddingBottom="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="7dp">
+
+            <TextView
+                android:id="@+id/txt_list_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:textSize="40sp"
+                android:text="Name"
+                android:textColor="#132c33"
+                android:textAlignment="center"
+                android:gravity="center_horizontal" />
+            <TextView
+                android:id="@+id/txt_list_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_marginBottom="7dp"
+                android:text="Email"
+                android:textColor="#150e56"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"/>
+            <TextView
+                android:id="@+id/txt_list_balance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_marginBottom="7dp"
+                android:text="Balance"
+                android:textColor="#1b2021"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sm_cardView"
+        android:text="Send Money?"
+        android:layout_marginLeft="80dp"
+        android:padding="10dp"
+        android:textSize="30sp"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:id="@+id/sendTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text=">>"
+        android:layout_below="@id/sm_cardView"
+        android:layout_toRightOf="@id/text"
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        android:textSize="30sp"
+        android:background="@drawable/custom_round"/>
+</RelativeLayout>
